@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Colony Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="ui-panel">
+            <h1>Ant Colony Simulator</h1>
+            <div id="resources">
+                <div class="resource">Coins: <span id="coins-count">1000</span></div>
+                <div class="resource">Food: <span id="food-count">0</span></div>
+                <div class="resource">Water: <span id="water-count">100</span></div>
+                <div class="resource">Ants: <span id="ant-count">1</span></div>
+                <div class="resource">Dirt: <span id="dirt-count">0</span></div>
+            </div>
+            <div id="controls">
+                <button id="dig-button">Dig Tunnel</button>
+                <button id="gather-button">Gather Food</button>
+                <button id="gather-water-button">Gather Water</button>
+                <button id="spawn-ant-button">Spawn Ant</button>
+                <button id="upgrade-button">Upgrades</button>
+                <button id="pause-button">Pause</button>
+                <button id="save-button">Save Game</button>
+                <button id="reset-button">Reset Game</button>
+                <button id="guide-button">Guide</button>
+            </div>
+            <div id="guide">
+                <h3>Game Guide</h3>
+                <p><strong>Objective:</strong> Build and manage an ant colony. Gather food, dig tunnels, spawn ants, and defend against enemies.</p>
+                <p><strong>Controls:</strong></p>
+                <ul>
+                    <li>Arrow keys or WASD: Move the main ant</li>
+                    <li>Spacebar: Gather food</li>
+                    <li>Mouse click on canvas: Move ant to position</li>
+                    <li>Buttons: Dig tunnels, gather food, spawn ants</li>
+                </ul>
+                <p><strong>Rules:</strong></p>
+                <ul>
+                    <li>Gather food to spawn more ants</li>
+                    <li>Dig tunnels to expand your colony</li>
+                    <li>Defend against red enemies</li>
+                    <li>Manage resources wisely for long-term survival</li>
+                </ul>
+            </div>
+            <div id="messages"></div>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
